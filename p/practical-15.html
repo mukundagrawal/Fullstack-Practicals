@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+</head>
+<style>
+    body {
+        background-color: rgb(161, 243, 179);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 60px;
+        color: rgb(138, 126, 241);
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(243, 151, 12);
+        outline: none;
+        font-size: 25px;
+        margin: 0 70px;
+    }
+
+    #value {
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(197, 94, 146);
+    }
+</style>
+
+<body>
+    <h1>COUNTER</h1>
+    <div id="container">
+        <button id="btn-1">-</button>
+        <div id="value">0</div>
+        <button id="btn-2">+</button>
+    </div>
+    <script>
+        var counter = 0;
+        var btn1 = document.getElementById("btn-1");
+        var btn2 = document.getElementById("btn-2");
+        var number = document.getElementById("value");
+        btn1.disabled = true;
+        btn1.onclick = function () {
+            counter = counter - 1;
+            document.getElementById("value").innerHTML = counter;
+            if (counter == 0) {
+                btn1.disabled = true;
+            }
+        }
+        btn2.onclick = function () {
+            btn1.disabled = false;
+            counter = counter + 1;
+            document.getElementById("value").innerHTML = counter;
+        }
+    </script>
+</body>
+
+</html>

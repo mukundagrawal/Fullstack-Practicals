@@ -1,0 +1,108 @@
+body{
+    background-color:lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.menu, map area{
+    outline: none;
+}
+img.map, map area{
+    outline: none;
+}
+
+#h2{
+    text-align: center;
+    color: rgb(0, 255, 42);
+}
+#red-color{
+    text-align: center;
+    color: rgb(0, 255, 42);
+}
+.image{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pages{
+    color: white;
+    background-color:lightyellow;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+.box{
+    background-color: lightgreen;
+    width:100%;
+}
+.box h1{
+    text-align:center;
+    font-style: bold; 
+    color:gray;
+    font-size:xx-large;
+}
+
+.card {
+    background-color:rgb(199, 253, 251);
+    float: left;
+    border-radius: 10px;
+    width: 20%;
+    margin: 20px 15px;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    text-align: center;
+    margin: 5px 10px;
+    font-style: oblique;
+    color: mediumblue;
+}
+
+.card p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 15px 10px;
+    color:darkcyan;
+    font-style: italic;
+}
+
+.card a {
+    color:gray;
+    background-color:greenyellow;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card a:hover {
+    background-color: blue;
+}
+@media screen and(max-width:600px){
+    .card{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
